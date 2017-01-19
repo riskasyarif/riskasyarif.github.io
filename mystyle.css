@@ -6,11 +6,11 @@ h1{
     font-family: arial;
    color: yellow;
    margin-left: 200px;
-    backgroud: lightgray
+    background: lightgray
 }
 
 #columns{
-    background-color: lightblue
+    background-color: lightblue;
     font-family: sans-serif;
     -webkit-column-count: 3; /*chrome, safari, opera */
     -moz-column-count: 3; /*} firefox */ 
@@ -24,7 +24,7 @@ h1{
     -webkit-column-count: 3; /*Chrome, Safari, Opera */
     -moz-column-count: 3; /* Firefox */
     column-count: 3;
-    -webkit-columns-gap: 50px; /*Chrome, Safari, Opera */
+    -webkit-column-gap: 50px; /*Chrome, Safari, Opera */
     -moz-column-count: 3; /* Firefox */
     column-gap: 50px;
 }
@@ -38,5 +38,5 @@ h1{
 #diff-col .mid-col{
     width: 30%
     padding: 10px;
-    backkground: purple;
+    background: purple;
 }
