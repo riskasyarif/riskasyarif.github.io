@@ -1,3 +1,4 @@
+
 #header {
     padding: 10px;
     color: white;
@@ -6,7 +7,9 @@
     background-color: dimgrey; 
     height: 250px;
     }
-
+h1{
+    color: yellow;
+}
 .thumbnail{
     border:5px solid gray;
     float: left;
