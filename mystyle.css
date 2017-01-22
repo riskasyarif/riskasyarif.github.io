@@ -1,42 +1,74 @@
-body{
-background-color: red;
-}
-
-h1{
-    font-family: arial;
-   color: yellow;
-   margin-left: 200px;
-    background: lightgray
-}
-
-#columns{
-    background-color: lightblue;
-    font-family: sans-serif;
-    -webkit-column-count: 3; /*chrome, safari, opera */
-    -moz-column-count: 3; /*} firefox */ 
-    column-count: 3; 
--webkit-column-gap: 50px; /* Chrome, Safari, Opera */
-    -moz-column-gap: 50px; /*Firefox */
-    column-gap: 50px;
-}
-
-#diff col{
-    -webkit-column-count: 3; /*Chrome, Safari, Opera */
-    -moz-column-count: 3; /* Firefox */
-    column-count: 3;
-    -webkit-column-gap: 50px; /*Chrome, Safari, Opera */
-    -moz-column-count: 3; /* Firefox */
-    column-gap: 50px;
-}
-
-#diff-col .left-col{
-    width: 30%
+#header {
     padding: 10px;
-    background: lightyellow;
+    color: white;
+    font-family: bookantiqua;
+    text-align: left;
+    background-color: dimgrey; 
+    height: 250px;
+    }
+
+.thumbnail{
+    border:5px solid gray;
+    float: left;
 }
 
-#diff-col .mid-col{
-    width: 30%
-    padding: 10px;
-    background: purple;
+.thumbnail1{
+    border:5px solid gray;
+    float: right;
+}
+
+#contain{
+    font-family:georgia;
+    color: black;
+            
+    }
+
+#kiri{
+    padding: 5px;
+    width: 450px;
+    text-align: center;
+    background-color: darkgrey;
+    color: black;
+    float:left;
+    margin: 15px;
+    padding: 5px;
+}
+
+#tengah{
+    width: 450px;
+    padding: 5px;
+    text-align: center;
+    background-color: azure;
+    float: left;
+    margin-right: 5px;
+    margin-left: 30px;
+    margin-top: 15px;
+    
+}
+
+#kanan{
+    width: 450px;
+    padding: 5px;
+    margin: 15px;
+    text-align: center;
+    background-color: aliceblue;
+    float: right;
+}
+
+#footer{
+    clear: both;
+    padding: 5px;
+    font-family: georgia;
+    background-color: burlywood;
+    text-align: center;
+    border: 5px solid black;
+    
+}
+#closer{
+    text-align: center;
+    font-size: 20px;
+    margin: 15px;
+    }
+.contact-btn{
+    float: inherit;
 }
