@@ -1,4 +1,3 @@
-
 #header {
     padding: 10px;
     color: white;
@@ -20,12 +19,13 @@
 
 #contain{
     font-family:georgia;
-    color: black;            
+    color: black;
+            
     }
 
 #kiri{
     padding: 5px;
-    width: 250px;
+    width: 450px;
     text-align: center;
     background-color: darkgrey;
     color: black;
@@ -35,7 +35,7 @@
 }
 
 #tengah{
-    width: 250px;
+    width: 450px;
     padding: 5px;
     text-align: center;
     background-color: azure;
@@ -47,7 +47,7 @@
 }
 
 #kanan{
-    width: 250px;
+    width: 450px;
     padding: 5px;
     margin: 15px;
     text-align: center;
@@ -73,7 +73,7 @@
 .contact-btn{
     font-family: sans-serif;
     display: inline-block;
-    margin-left: 550px;
+    margin-left: 700px;
     border: 1px solid white;
     padding: 10px;
 }
@@ -99,3 +99,4 @@ li{
     margin: 10px;
 }
     
+ 
