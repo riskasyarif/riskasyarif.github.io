@@ -25,7 +25,7 @@
 
 #kiri{
     padding: 5px;
-    width: 400px;
+    width: 250px;
     text-align: center;
     background-color: darkgrey;
     color: black;
@@ -35,7 +35,7 @@
 }
 
 #tengah{
-    width: 400px;
+    width: 250px;
     padding: 5px;
     text-align: center;
     background-color: azure;
@@ -47,7 +47,7 @@
 }
 
 #kanan{
-    width: 400px;
+    width: 250px;
     padding: 5px;
     margin: 15px;
     text-align: center;
@@ -73,7 +73,7 @@
 .contact-btn{
     font-family: sans-serif;
     display: inline-block;
-    margin-left: 500px;
+    margin-left: 550px;
     border: 1px solid white;
     padding: 10px;
 }
