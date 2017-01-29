@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Tugas Form</title>
+    <link rel='stylesheet' href='TugasForm.css' type='text/css' />
+    <script src="TugasForm.js"></script>
+</head>
+
+<body>
+    <h1>Order Form</h1>
+    <form name='registration' onSubmit="return formValidation();">
+        <ul>
+            <li>
+                <label for="OrderNo">Order No :</label>
+            </li>
+            <li>
+                <input type="text" name="OrderNo" size="50" />
+            </li>
+            <li>
+                <label for="username">Name :</label>
+            </li>
+            <li>
+                <input type="text" name="username" size="50" />
+            </li>
+            <li>
+                <label for="phone">Mobile Number :</label>
+            </li>
+            <li>
+                <input type="text" name="phone" size="50" />
+            </li>
+            <li>
+                <label for="address">Address :</label>
+            </li>
+            <li>
+                <input type="text" name="address" size="50" />
+            </li>
+            <li>
+                <label for="zip">ZIP Code:</label>
+            </li>
+            <li>
+                <input type="text" name="zip" />
+            </li>
+            <li>
+                <label for="email">Email:</label>
+            </li>
+            <li>
+                <input type="text" name="email" size="50" />
+            </li>
+            <li>
+                <label id="Type">Service Type :</label>
+            </li>
+            <li>
+                <input type="radio" name="Type" value="Delivery" /><span>Delivery</span></li>
+            <li>
+                <input type="radio" name="Type" value="Pick Up" /><span>Pick Up</span></li>
+            <li>
+            <li>
+                <label for="item">No. of Item:</label>
+            </li>
+            <li>
+                <select name="item">
+                    <option selected="" value="Default">(submit number of item)</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="more">more</option>
+                </select>
+            </li>
+            <li>
+                <label>Language:</label>
+            </li>
+            <li>
+                <input type="checkbox" name="en" value="en" checked /><span>Reguler</span></li>
+            <li>
+                <input type="checkbox" name="noen" value="noen" /><span>Express</span></li>
+            <li>
+                <label for="desc">Item  Description:</label>
+            </li>
+            <li>
+                <textarea name="desc" id="desc"></textarea>
+            </li>
+            <li>
+                <input type="submit" name="submit" value="Submit" />
+            </li>
+        </ul>
+                                                                 
+    </form>
+                                                              
+</body>
+
+</html>
