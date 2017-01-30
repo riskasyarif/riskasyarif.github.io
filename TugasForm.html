@@ -9,15 +9,48 @@
 </head>
 
 <body>
+   
     <h1>Order Form</h1>
     <form name='registration' onSubmit="return formValidation();">
+                         
+         <label for="orderNo">Order No. :</label>        
+                <input type="text" name="OrderNo" size="20" />   
         <ul>
-            <li>
-                <label for="OrderNo">Order No :</label>
-            </li>
-            <li>
-                <input type="text" name="OrderNo" size="50" />
-            </li>
+                <li>           
+                <label for="date">Date :</label>
+                </li>
+        </ul>
+                <select name="item">
+                    <option selected="" value="Default">(day)</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="more">more</option>
+                </select>
+            
+        <select name="item">
+                    <option selected="" value="Default">(Month)</option>
+                    <option value="1">January</option>
+                    <option value="2">February</option>
+                    <option value="3">March</option>
+                    <option value="4">April</option>
+                    <option value="more">more</option>
+                </select>
+        
+        <select name="item">
+                    <option selected="" value="Default">(Year)</option>
+                    <option value="1">2015</option>
+                    <option value="2">2016</option>
+                    <option value="3">2017</option>
+                    <option value="4">2018</option>
+                    <option value="more">more</option>
+                </select>
+            
+            
+        
+         <ul>
+            
             <li>
                 <label for="username">Name :</label>
             </li>
@@ -88,7 +121,7 @@
         </ul>
                                                                  
     </form>
-                                                              
+                                                                                                                       
 </body>
 
 </html>
