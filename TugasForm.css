@@ -1,10 +1,17 @@
 h1{
     font-family: sans-serif;
-    background: black;
+    background: blue;
     color: white;
     max-width: 700px;
     padding-left: 10px;
 }
+
+h2{
+    font-family: sans-serif;
+    background: blue-marine;
+    color: white;
+    max-width: 700px;
+    padding-left: 10px;}
 
 form li {
 list-style: none;
@@ -48,3 +55,12 @@ font-weight: bold;
 }
 form label { 
 font-family: sans-serif}
+
+.picture{
+    margin: 50px;
+    display: flex;
+    justify-content: flex-start;
+}
+.picture .picture-item{
+    padding: 30px;
+}

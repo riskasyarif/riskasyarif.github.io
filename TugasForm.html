@@ -9,8 +9,25 @@
 </head>
 
 <body>
+    <h1>I FoR DeliveRy</h1>
+    <div class="picture">
+
+        <figure>
+            <img class="picture-item" src="pict1.jpg">
+            <figcaption>
+                <p>Item1</p>
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img class="picture-item" src="pict3.jpg">
+            <figcaption>
+                <p>Item2</p>
+            </figcaption>
+        </figure>
+    </div>
    
-    <h1>Order Form</h1>
+    <h2>Order Form</h2>
     <form name='registration' onSubmit="return formValidation();">
                          
          <label for="orderNo">Order No. :</label>        
@@ -82,7 +99,8 @@
                 <input type="text" name="email" size="50" />
             </li>
             <li>
-                <label id="Type">Service Type :</label>
+                <label id="Type">Service Order :</label>
+                
             </li>
             <li>
                 <input type="radio" name="Type" value="Delivery" /><span>Delivery</span></li>
@@ -103,13 +121,25 @@
                 </select>
             </li>
             <li>
-                <label>Language:</label>
+                <label>Service Type:</label>
             </li>
             <li>
                 <input type="checkbox" name="en" value="en" checked /><span>Reguler</span></li>
             <li>
                 <input type="checkbox" name="noen" value="noen" /><span>Express</span></li>
+             <li>
+                <label for="desc">Weight:</label>
+            </li>
             <li>
+               <input type="button" value="kg" onclick="calculate();" />
+             </li>
+             <li>
+                <label for="desc">Price:</label>
+            </li>
+             <li>
+               <input type="button" value="calculate" onclick="calculate();" />
+             </li>
+             <li>
                 <label for="desc">Item  Description:</label>
             </li>
             <li>
