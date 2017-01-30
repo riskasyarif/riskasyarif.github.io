@@ -1,0 +1,37 @@
+title{
+    font-family: sans-serif;
+}
+
+h1{
+    font-family: sans-serif;
+    text-align: right;
+    background-color: grey;
+}
+
+.image{
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.image .image-item{
+    padding: 30px;
+}
+
+.image .image2{
+    
+}
+
+.picture{
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+}
+.picture .picture-item{
+    padding: 30px;
+}
+p{
+    font-family: sans-serif;
+    font-size: 15px;
+    text-align: center;
+}

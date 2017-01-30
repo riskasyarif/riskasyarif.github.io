@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title>Login page</title>
+    </head>
+    <body>
+    <h1 style="font_family: Courier New"; text-align="center"; font-size:20pt; color:#00FF00;>
+      Simple Login Page 
+    </h1>
+    <form name ="login"> 
+        Username
+       <input type="text" name="userid" /> 
+        Password
+       <input type="password" name="pswrd"/>
+       <input type="button" onclick="check(this.form)" value="Login"/>
+        <input type="reset" value="cancel"/>
+    </form>
+    <script language="javascript">
+       function check(form) /*function to check userid & password*/ {
+       
+       /*the following code checkes whether the entered userid and password are matching*/
+       if (form.userid.value == "myuserid" && form.pswrd.value == "mypswrd")
+       {
+       window.open("https://riskasyarif.github.io")
+       /*open the target page while Id & target matches*/
+       alert("your username and password is correct")}
+           else { alert("Error paassword or username") /*displays error message*/ }
+       }
+        
+       
+    </script>
+    </body>
+</html>

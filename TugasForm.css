@@ -1,0 +1,66 @@
+h1{
+    font-family: sans-serif;
+    background: blue;
+    color: white;
+    max-width: 700px;
+    padding-left: 10px;
+}
+
+h2{
+    font-family: sans-serif;
+    background: blue-marine;
+    color: white;
+    max-width: 700px;
+    padding-left: 10px;}
+
+form li {
+list-style: none;
+margin-bottom: 5px;
+}
+
+form ul li label{
+float: left;
+clear: left;
+width: 150px;
+text-align: right;
+margin-right: 12px;
+font-family:Verdana, Arial, Helvetica, sans-serif;;
+font-size:14px;
+}
+
+form ul li input, select, span {
+float: left;
+margin-bottom: 10px;
+font-family: sans-serif;
+font-size: 14px;
+
+}
+
+form textarea {
+float: left;
+width: 350px;
+height: 150px;
+    margin-left: 15px
+}
+
+[type="submit"] {
+clear: left;
+margin: 20px 0 0 320px;
+font-size:16px
+}
+
+p {
+margin-left: 70px;
+font-weight: bold;
+}
+form label { 
+font-family: sans-serif}
+
+.picture{
+    margin: 50px;
+    display: flex;
+    justify-content: flex-start;
+}
+.picture .picture-item{
+    padding: 30px;
+}
