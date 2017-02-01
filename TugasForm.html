@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,53 +7,34 @@
     <link rel='stylesheet' href='TugasForm.css' type='text/css' />
     <script src="TugasForm.js"></script>
     
-    <script type="text/javascript">
-
-        // Called on form's `onsubmit`
-        function tosubmit() {
-            // Getting the value of your text input
-            var mytext = document.getElementById("text").value;
-
-            // Storing the value above into localStorage
-            localStorage.setItem("text", mytext);
-
-            return true;
-        }
-
-    </script> 
     
 </head>
 
-<body>
+<body onload="document.registration.userid.focus();">
     
+    <h1>I FoR DeliveRy</h1>Use tab keys to move from one input field to the next.
 
+    <form name='registration' onSubmit="return formValidation();" "tosubmit();" action="TFConf.html">
     
     
-    
-    
-    <h1>I FoR DeliveRy</h1>
     <div class="picture">
-
         <figure>
-            <img class="picture-item" src="pict1.jpg">
+            <img class="picture-item" src="ifor2.jpg">
             <figcaption>
-                <p>Item1</p>
-            </figcaption>
-        </figure>
-
-        <figure>
-            <img class="picture-item" src="pict3.jpg">
-            <figcaption>
-                <p>Item2</p>
+                <p>We Deliver For You</p>
             </figcaption>
         </figure>
     </div>
    
     <h2>Order Form</h2>
-    <form name='OrderForm' action="confirm.html">
-                         
-         <label for="orderNo">Order No. :</label>        
-                <input type="text" name="OrderNo" size="20" />   
+        
+    
+        <label for="passid">Officer Pass Id :</label>  
+        <input type="password" name="passid" size="20" />
+        
+        <label for="orderNo">Order Number :</label>
+        <input type="text" name="OrderNo" size="20" />   
+                    
         <ul>
                 <li>           
                 <label for="date">Date :</label>
@@ -85,10 +65,8 @@
                     <option value="3">2017</option>
                     <option value="4">2018</option>
                     <option value="more">more</option>
-                </select>
-            
-            
-        
+                </select>            
+                
          <ul>
             
             <li>
@@ -122,13 +100,13 @@
                 <input type="text" name="email" size="50" />
             </li>
             <li>
-                <label id="Type">Service Order :</label>
+                <label id="order">Service Order :</label>
                 
             </li>
             <li>
-                <input type="radio" name="Type" value="Delivery" /><span>Delivery</span></li>
+                <input type="radio" name="order" value="Delivery" /><span>Delivery</span></li>
             <li>
-                <input type="radio" name="Type" value="Pick Up" /><span>Pick Up</span></li>
+                <input type="radio" name="order" value="Pick Up" /><span>Pick Up</span></li>
             <li>
             <li>
                 <label for="item">No. of Item:</label>
@@ -151,16 +129,21 @@
             <li>
                 <input type="checkbox" name="noen" value="noen" /><span>Express</span></li>
              <li>
-                <label for="desc">Weight:</label>
+                <label for="weight">Weight:</label>
             </li>
             <li>
-               <input type="button" value="kg"  />
+               <input type="text" name="weight" size="1" />
+                <select name="item">
+                    <option selected="" value="Default">kg</option>
+                    
+                </select>
              </li>
              <li>
-                <label for="desc">Price:</label>
+                <label for="text">Price:</label>
             </li>
              <li>
                <input type="button" value="calculate" onclick="calculate();" />
+               <input type="text" name="total Price" size="10" />
              </li>
              <li>
                 <label for="desc">Item  Description:</label>
@@ -172,168 +155,9 @@
                 <input type="submit" name="submit" value="Submit" />
             </li>
         </ul>
-                                                                 
-     
-        </form>            
+                                                               
+       </form>            
                                                                                                                        
 </body>
 
-=======
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <title>Tugas Form</title>
-    <link rel='stylesheet' href='TugasForm.css' type='text/css' />
-    <script src="TugasForm.js"></script>
-</head>
-
-<body>
-    <h1>I FoR DeliveRy</h1>
-    <div class="picture">
-
-        <figure>
-            <img class="picture-item" src="pict1.jpg">
-            <figcaption>
-                <p>Item1</p>
-            </figcaption>
-        </figure>
-
-        <figure>
-            <img class="picture-item" src="pict3.jpg">
-            <figcaption>
-                <p>Item2</p>
-            </figcaption>
-        </figure>
-    </div>
-   
-    <h2>Order Form</h2>
-    <form name='registration' onSubmit="return formValidation();">
-                         
-         <label for="orderNo">Order No. :</label>        
-                <input type="text" name="OrderNo" size="20" />   
-        <ul>
-                <li>           
-                <label for="date">Date :</label>
-                </li>
-        </ul>
-                <select name="item">
-                    <option selected="" value="Default">(day)</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="more">more</option>
-                </select>
-            
-        <select name="item">
-                    <option selected="" value="Default">(Month)</option>
-                    <option value="1">January</option>
-                    <option value="2">February</option>
-                    <option value="3">March</option>
-                    <option value="4">April</option>
-                    <option value="more">more</option>
-                </select>
-        
-        <select name="item">
-                    <option selected="" value="Default">(Year)</option>
-                    <option value="1">2015</option>
-                    <option value="2">2016</option>
-                    <option value="3">2017</option>
-                    <option value="4">2018</option>
-                    <option value="more">more</option>
-                </select>
-            
-            
-        
-         <ul>
-            
-            <li>
-                <label for="username">Name :</label>
-            </li>
-            <li>
-                <input type="text" name="username" size="50" />
-            </li>
-            <li>
-                <label for="phone">Mobile Number :</label>
-            </li>
-            <li>
-                <input type="text" name="phone" size="50" />
-            </li>
-            <li>
-                <label for="address">Address :</label>
-            </li>
-            <li>
-                <input type="text" name="address" size="50" />
-            </li>
-            <li>
-                <label for="zip">ZIP Code:</label>
-            </li>
-            <li>
-                <input type="text" name="zip" />
-            </li>
-            <li>
-                <label for="email">Email:</label>
-            </li>
-            <li>
-                <input type="text" name="email" size="50" />
-            </li>
-            <li>
-                <label id="Type">Service Order :</label>
-                
-            </li>
-            <li>
-                <input type="radio" name="Type" value="Delivery" /><span>Delivery</span></li>
-            <li>
-                <input type="radio" name="Type" value="Pick Up" /><span>Pick Up</span></li>
-            <li>
-            <li>
-                <label for="item">No. of Item:</label>
-            </li>
-            <li>
-                <select name="item">
-                    <option selected="" value="Default">(submit number of item)</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="more">more</option>
-                </select>
-            </li>
-            <li>
-                <label>Service Type:</label>
-            </li>
-            <li>
-                <input type="checkbox" name="en" value="en" checked /><span>Reguler</span></li>
-            <li>
-                <input type="checkbox" name="noen" value="noen" /><span>Express</span></li>
-             <li>
-                <label for="desc">Weight:</label>
-            </li>
-            <li>
-               <input type="button" value="kg" onclick="calculate();" />
-             </li>
-             <li>
-                <label for="desc">Price:</label>
-            </li>
-             <li>
-               <input type="button" value="calculate" onclick="calculate();" />
-             </li>
-             <li>
-                <label for="desc">Item  Description:</label>
-            </li>
-            <li>
-                <textarea name="desc" id="desc"></textarea>
-            </li>
-            <li>
-                <input type="submit" name="submit" value="Submit" />
-            </li>
-        </ul>
-                                                                 
-    </form>
-                                                                                                                       
-</body>
-
->>>>>>> origin/master
 </html>
