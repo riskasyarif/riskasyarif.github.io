@@ -132,7 +132,8 @@
                 <label for="weight">Weight:</label>
             </li>
             <li>
-               <input type="text" name="weight" size="1" />
+                <input type="number" id="weight" name="weight" size=5 required>
+                />
                 <select name="item">
                     <option selected="" value="Default">kg</option>
                     
@@ -143,10 +144,14 @@
             </li>
              <li>
                <input type="button" value="calculate" onclick="calculate();" />
-               <input type="text" name="total Price" size="10" />
+               
+                <label>
+                <input type="text" id="price">
+                </label>
              </li>
              <li>
                 <label for="desc">Item  Description:</label>
+                 
             </li>
             <li>
                 <textarea name="desc" id="desc"></textarea>
